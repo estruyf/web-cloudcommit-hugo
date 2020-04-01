@@ -1,5 +1,26 @@
+[build]
+publish = "public"
+command = "hugo --gc --minify"
 
+[build.environment]
+HUGO_VERSION = "0.61.0"
 
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    cache-control = "public, max-age=31536000"
 
 [[redirects]]
   from = "/*"
