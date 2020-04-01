@@ -927,8 +927,10 @@ ol {
 }
 
 .copyright-text .term {
-	display: inline-block;
-	float: right;
+	display: block;
+	font-style: italic;
+	text-align: center;
+	margin-top: 15px;
 }
 
 /*---------------  Other Pages Style  --------------*/
