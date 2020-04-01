@@ -464,6 +464,11 @@ ol {
 	top: 50px;
 }
 
+.dateInfo > span,
+.event-name {
+	margin-right: 12px;
+}
+
 .hero-items .single-hero-item h1 {
 	color: #fff;
 	font-size: 100px;
