@@ -190,7 +190,7 @@
       params = location.hash.split("/").filter(p => p !== "#");
     } else {
       var 
-      params = location.pathname.split("/");
+      params = location.pathname.split("/").filter(p => p !== "");
     }
 
     for (var i = 0; i < 5; i++) {
