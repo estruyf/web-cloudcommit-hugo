@@ -266,12 +266,15 @@ ol {
 }
 
 .header .logo {
+	font-family: 'Galada', cursive;
 	float: left;
 	margin-right: 178px;
+	font-size: 28px;
 }
 
 .header .logo a {
-	display: inline-block;
+	display: block;
+	color: #fff;
 }
 
 .header .main-menu {

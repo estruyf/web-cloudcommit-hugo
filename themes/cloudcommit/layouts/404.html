@@ -182,9 +182,10 @@
     return i + "<sup>th</sup>";
   };
 
-  window.onload = function() {
+  var setEvent = function() {
     var params = [];
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
     if (location.href.indexOf("404.html") !== -1) {
       params = location.hash.split("/").filter(p => p !== "#");
     } else {
@@ -214,18 +215,24 @@
           setContent(document.querySelectorAll('.day'), daySuffix(day));
           break;
         case 3:
-          const location = param.replace(/-/g, " / ");
-          setContent(document.querySelectorAll('.location'), location);
+          var eventLocation = param.replace(/-/g, " / ");
+          setContent(document.querySelectorAll('.location'), eventLocation);
           break;
         case 4:
-          const eventName = param.replace(/-/g, "<br />");
+          var eventName = param.replace(/-/g, "<br />");
+          var eventTitle = param.replace(/-/g, " ");
+          var eventLocation = params[3].replace(/-/g, " / ");
           setContent(document.querySelectorAll('.event-name'), eventName);
+          document.title = eventTitle + " @ " + eventLocation;
+          setContent(document.querySelectorAll('.logo a'), eventTitle);
           break;
         default:
           break;
       }
     }
   };
+
+  window.onload = setEvent;
 </script>
 <!-- Speak About Section End -->
 {{ end }}
