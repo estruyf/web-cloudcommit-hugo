@@ -2,3 +2,9 @@ baseURL = "https://cloudcommit.io/"
 languageCode = "en-us"
 title = "Cloud Commit"
 theme = "cloudcommit"
+
+googleAnalytics = "UA-162431743-1"
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
