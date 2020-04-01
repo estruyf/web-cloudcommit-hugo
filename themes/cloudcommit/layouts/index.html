@@ -6,7 +6,7 @@
           <div class="header">
               <div class="col-lg-12">
                   <div class="logo">
-                      <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <a href="{{.Site.BaseUrl}}"><img src="{{.Site.BaseUrl}}/img/logo.png" alt=""></a>
                   </div>
                   <div class="navigation mobile-menu">
                       <div class="main-menu">
@@ -31,7 +31,7 @@
 <!-- Hero Area Begin -->
 <div class="hero-section">
   <div class="hero-items owl-carousel">
-      <div class="single-hero-item set-bg" data-setbg="img/slider/bg-2.jpg">
+      <div class="single-hero-item set-bg" data-setbg="{{.Site.BaseUrl}}/img/slider/bg-2.jpg">
           <div class="container">
               <div class="row">
                   <div class="col-lg-12">
@@ -42,7 +42,7 @@
               </div>
           </div>
       </div>
-      <div class="single-hero-item set-bg" data-setbg="img/slider/bg-2.jpg">
+      <div class="single-hero-item set-bg" data-setbg="{{.Site.BaseUrl}}/img/slider/bg-2.jpg">
           <div class="container">
               <div class="row">
                   <div class="col-lg-12">
@@ -53,7 +53,7 @@
               </div>
           </div>
       </div>
-      <div class="single-hero-item set-bg" data-setbg="img/slider/bg-1.jpg">
+      <div class="single-hero-item set-bg" data-setbg="{{.Site.BaseUrl}}/img/slider/bg-1.jpg">
           <div class="container">
               <div class="row">
                   <div class="col-lg-12">
@@ -70,7 +70,7 @@
 
 <!-- Workshop Begin -->
 <section class="workshop-section">
-  <div class="workshop-img set-bg" data-setbg="img/workshop.jpg"></div>
+  <div class="workshop-img set-bg" data-setbg="{{.Site.BaseUrl}}/img/workshop.jpg"></div>
   <div class="container">
       <div class="row">
           <div class="col-lg-6 offset-lg-6">
@@ -79,7 +79,7 @@
                   <h2>How to start <br /> creating your <br /> own event.</h2>
                   <p>Most of us are stuck at home, and with all conferences canceled or moved online. There is now way to escape home any time soon.</p> 
                   <p>As it is April 1st, why not create your fake event to tell your colleagues/partner you cannot miss this event. Just create the following URL: <code>https://cloudcommit.io/:year/:month/:day/:location/:event-name/</code></p>
-                  <p>Here is an example: <a href="https://cloudcommit.io/2020/10/25/Belgium-Antwerp/The-greatest-event/">https://cloudcommit.com/2020/10/25/Belgium-Antwerp/The-greatest-event/<a></a></p>
+                  <p>Here is an example: <a href="https://cloudcommit.io/2020/10/25/Belgium-Antwerp/The-greatest-event/">https://cloudcommit.io/2020/10/25/Belgium-Antwerp/The-greatest-event/<a></a></p>
               </div>
           </div>
       </div>
@@ -101,7 +101,7 @@
           <div class="col-lg-4 col-sm-6">
               <div class="speakers-about">
                   <div class="speaker-img">
-                      <img src="img/speaker-1.jpg" alt="">
+                      <img src="{{.Site.BaseUrl}}/img/speaker-1.jpg" alt="">
                   </div>
                   <div class="speaker-text">
                       <h3>Jessica Doe <span>The Corporate Superhero</span></h3>
@@ -111,7 +111,7 @@
           <div class="col-lg-4 col-sm-6">
               <div class="speakers-about">
                   <div class="speaker-img">
-                      <img src="img/speaker-2.jpg" alt="">
+                      <img src="{{.Site.BaseUrl}}/img/speaker-2.jpg" alt="">
                   </div>
                   <div class="speaker-text">
                       <h3>Samatha Cools <span>The Corporate Villain</span></h3>
@@ -121,7 +121,7 @@
           <div class="col-lg-4 col-sm-6">
               <div class="speakers-about">
                   <div class="speaker-img">
-                      <img src="img/speaker-3.jpg" alt="">
+                      <img src="{{.Site.BaseUrl}}/img/speaker-3.jpg" alt="">
                   </div>
                   <div class="speaker-text">
                       <h3>John Smith <span>The Pretender</span></h3>
