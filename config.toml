@@ -1,4 +1,4 @@
-baseURL = "https://cloudcommit.events/"
+baseURL = "https://cloudcommit.io/"
 languageCode = "en-us"
 title = "Cloud Commit"
 theme = "cloudcommit"
