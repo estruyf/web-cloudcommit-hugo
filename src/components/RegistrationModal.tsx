@@ -41,7 +41,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({
       // Prevent scrolling on body when modal is open
       document.body.style.overflow = 'hidden';
     }
-    
+
     return () => {
       document.removeEventListener('keydown', handleEscapeKey);
       // Restore scrolling when modal is closed
@@ -59,33 +59,33 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div 
+    <div
       className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
       onClick={handleBackgroundClick}
     >
       <div className="bg-white rounded-lg shadow-xl w-full max-w-md relative">
-        <button 
+        <button
           onClick={onClose}
           className="absolute right-4 top-4 text-gray-500 hover:text-gray-700"
           aria-label="Close"
         >
           <X size={24} />
         </button>
-        
+
         {!submitted ? (
           <>
             <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 rounded-t-lg">
               <h2 className="text-2xl font-bold">Register for Event</h2>
               <p className="mt-2 opacity-90">Complete the form below to secure your spot</p>
             </div>
-            
-            <form onSubmit={handleSubmit} className="p-6">
+
+            <form onSubmit={handleSubmit} className="p-6" data-netlify="true">
               <div className="mb-6 bg-indigo-50 p-4 rounded-lg">
                 <h3 className="font-semibold text-lg text-indigo-800 mb-2 capitalize">{eventName}</h3>
                 <p className="text-gray-700 mb-1 capitalize"><span className="font-medium">Location:</span> {location}</p>
                 <p className="text-gray-700"><span className="font-medium">Date:</span> {date}</p>
               </div>
-              
+
               <div className="mb-4">
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
                   Your Name
@@ -99,7 +99,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({
                   required
                 />
               </div>
-              
+
               <div className="mb-4">
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
                   Email Address
@@ -113,7 +113,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({
                   required
                 />
               </div>
-              
+
               <div className="mb-6">
                 <label htmlFor="reason" className="block text-gray-700 font-medium mb-2">
                   Why are you interested in this event?
@@ -127,7 +127,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({
                   required
                 />
               </div>
-              
+
               <div className="flex space-x-3">
                 <button
                   type="button"
